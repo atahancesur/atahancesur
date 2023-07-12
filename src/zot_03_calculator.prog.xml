@@ -15,9 +15,57 @@
      <LANGUAGE>E</LANGUAGE>
      <TEXTPOOL>
       <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sayı Girin</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>İşlem Seçin</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
        <ID>R</ID>
        <ENTRY>Hesap Makinesi Atahan Cesur</ENTRY>
        <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_BOL</KEY>
+       <ENTRY>Bölme</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_CARP</KEY>
+       <ENTRY>Çarpma</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_CIKAR</KEY>
+       <ENTRY>Çıkartma</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_TOPLA</KEY>
+       <ENTRY>Toplama</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_VAL1</KEY>
+       <ENTRY>1. Sayı</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_VAL2</KEY>
+       <ENTRY>2. Sayi</ENTRY>
+       <LENGTH>15</LENGTH>
       </item>
      </TEXTPOOL>
     </item>

@@ -1,14 +1,36 @@
-class ZCL_OT_03_MATH_OPS definition
-  public
-  final
-  create public .
+CLASS ZCL_OT_03_MATH_OPS DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+
+    METHODS: calculate_result
+      IMPORTING iv_number1   TYPE i
+                iv_number2   TYPE i
+                iv_operation TYPE c
+      EXPORTING ev_result    TYPE i.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_OT_03_MATH_OPS IMPLEMENTATION.
+CLASS zcl_ot_03_math_ops IMPLEMENTATION.
+  METHOD calculate_result.
+
+    CASE iv_operation.
+      WHEN '+'.
+        ev_result = iv_number1 + iv_number2.
+      WHEN '-'.
+        ev_result = iv_number1 - iv_number2.
+      WHEN '*'.
+        ev_result = iv_number1 * iv_number2.
+      WHEN '/'.
+        ev_result = iv_number1 / iv_number2.
+    ENDCASE.
+
+  ENDMETHOD.
+
 ENDCLASS.
