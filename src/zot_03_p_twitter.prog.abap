@@ -1,18 +1,18 @@
-REPORT ZOT_03_P_TWITTER.
+REPORT zot_03_p_twitter.
 
 SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-001.
 
-PARAMETERS: p_val1 TYPE char60,
-            p_val2 TYPE char60.
+  PARAMETERS: p_val1 TYPE char60,
+              p_val2 TYPE char60.
 
 SELECTION-SCREEN END OF BLOCK b1.
 
 SELECTION-SCREEN BEGIN OF BLOCK b2 WITH FRAME TITLE TEXT-002.
 
-  PARAMETERS:  p_tw_at  RADIOBUTTON GROUP g1,
-               p_tw_dgs RADIOBUTTON GROUP g1,
-               p_tw_sil RADIOBUTTON GROUP g1,
-               p_tw_gst RADIOBUTTON GROUP g1.
+  PARAMETERS: p_tw_at  RADIOBUTTON GROUP g1,
+              p_tw_dgs RADIOBUTTON GROUP g1,
+              p_tw_sil RADIOBUTTON GROUP g1,
+              p_tw_gst RADIOBUTTON GROUP g1.
 
 SELECTION-SCREEN END OF BLOCK b2.
 

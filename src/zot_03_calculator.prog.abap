@@ -1,38 +1,39 @@
-REPORT ZOT_03_CALCULATOR.
+REPORT zot_03_calculator.
 
-SELECTION-SCREEN BEGIN OF BLOCK B1 WITH FRAME TITLE TEXT-001.
-  PARAMETERS: P_VAL1 TYPE I OBLIGATORY,
-              P_VAL2 TYPE I OBLIGATORY.
-SELECTION-SCREEN END OF BLOCK B1.
-
-
-SELECTION-SCREEN BEGIN OF BLOCK B2 WITH FRAME TITLE TEXT-002.
+SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-001.
+  PARAMETERS: p_val1 TYPE i OBLIGATORY,
+              p_val2 TYPE i OBLIGATORY.
+SELECTION-SCREEN END OF BLOCK b1.
 
 
-  PARAMETERS: P_TOPLA RADIOBUTTON GROUP G1,
-              P_CIKAR RADIOBUTTON GROUP G1,
-              P_CARP  RADIOBUTTON GROUP G1,
-              P_BOL   RADIOBUTTON GROUP G1.
+SELECTION-SCREEN BEGIN OF BLOCK b2 WITH FRAME TITLE TEXT-002.
 
-SELECTION-SCREEN END OF BLOCK B2.
 
-DATA: P_SONUC TYPE P DECIMALS 3.
+  PARAMETERS: p_topla RADIOBUTTON GROUP g1,
+              p_cikar RADIOBUTTON GROUP g1,
+              p_carp  RADIOBUTTON GROUP g1,
+              p_bol   RADIOBUTTON GROUP g1.
+
+SELECTION-SCREEN END OF BLOCK b2.
+
+DATA: p_sonuc TYPE p DECIMALS 3.
 
 START-OF-SELECTION.
-  IF P_TOPLA = 'X'.
-    P_SONUC = P_VAL1 + P_VAL2.
-  ELSEIF P_CIKAR = 'X'.
-    P_SONUC = P_VAL1 - P_VAL2.
-  ELSEIF P_BOL = 'X'.
+  IF p_topla = 'X'.
+    p_sonuc = p_val1 + p_val2.
+  ELSEIF p_cikar = 'X'.
+    p_sonuc = p_val1 - p_val2.
+  ELSEIF p_bol = 'X'.
     TRY.
-        P_SONUC = P_VAL1 / P_VAL2.
-      CATCH CX_SY_ZERODIVIDE.
+        p_sonuc = p_val1 / p_val2.
+      CATCH cx_sy_zerodivide.
         MESSAGE 'Sifira bolemezsin' TYPE 'I'.
+        DATA(lv_flag) = 'X' .
     ENDTRY.
   ELSE.
-    P_SONUC = P_VAL1 * P_VAL2.
+    p_sonuc = p_val1 * p_val2.
   ENDIF.
 
-  IF P_BOL NE 'X'.
-    MESSAGE | {  P_SONUC } | TYPE 'I'.
+  IF lv_flag NE 'X'.
+    MESSAGE | {  p_sonuc } | TYPE 'I'.
   ENDIF.

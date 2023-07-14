@@ -1,2 +1,2 @@
-REPORT ZOT_03_HELLOWORLD.
+REPORT zot_03_helloworld.
 WRITE 'Hello World'.
