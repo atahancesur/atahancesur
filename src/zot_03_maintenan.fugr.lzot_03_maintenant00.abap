@@ -55,6 +55,12 @@ DATA:  BEGIN OF STATUS_ZOT_03_T_UNVAN                .   "state vector
 DATA:  END OF STATUS_ZOT_03_T_UNVAN                .
 CONTROLS: TCTRL_ZOT_03_T_UNVAN
             TYPE TABLEVIEW USING SCREEN '0009'.
+*...processing: ZOT_03_T_ZMN....................................*
+DATA:  BEGIN OF STATUS_ZOT_03_T_ZMN                  .   "state vector
+         INCLUDE STRUCTURE VIMSTATUS.
+DATA:  END OF STATUS_ZOT_03_T_ZMN                  .
+CONTROLS: TCTRL_ZOT_03_T_ZMN
+            TYPE TABLEVIEW USING SCREEN '0010'.
 *.........table declarations:.................................*
 TABLES: *ZOT_03_T_PERS                 .
 TABLES: *ZOT_03_T_P_AILE               .
@@ -65,6 +71,7 @@ TABLES: *ZOT_03_T_P_ILTSM              .
 TABLES: *ZOT_03_T_P_ITUR               .
 TABLES: *ZOT_03_T_P_MAST               .
 TABLES: *ZOT_03_T_UNVAN                .
+TABLES: *ZOT_03_T_ZMN                  .
 TABLES: ZOT_03_T_PERS                  .
 TABLES: ZOT_03_T_P_AILE                .
 TABLES: ZOT_03_T_P_ATUR                .
@@ -74,6 +81,7 @@ TABLES: ZOT_03_T_P_ILTSM               .
 TABLES: ZOT_03_T_P_ITUR                .
 TABLES: ZOT_03_T_P_MAST                .
 TABLES: ZOT_03_T_UNVAN                 .
+TABLES: ZOT_03_T_ZMN                   .
 
 * general table data declarations..............
   INCLUDE LSVIMTDT                                .

@@ -73,6 +73,12 @@
      <DDTEXT>Zaman Araligi Hesaplama Tablosu Atahan Cesur</DDTEXT>
     </item>
    </DD02_TEXTS>
+   <TABL_EXTRAS>
+    <TDDAT>
+     <TABNAME>ZOT_03_T_ZMN</TABNAME>
+     <CCLASS>&amp;NC&amp;</CCLASS>
+    </TDDAT>
+   </TABL_EXTRAS>
   </asx:values>
  </asx:abap>
 </abapGit>
