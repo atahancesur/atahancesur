@@ -2,22 +2,25 @@ FORM get_data .
 
   IF r_rad1 EQ abap_true.
 
-    SELECT banfn,
-           bnfpo,
-           matkl,
-           matnr,
-           menge,
-           meins
+    SELECT banfn, "Purchase requisition number
+           bnfpo, "Item number of purchase requisition
+           matkl, "Material Group
+           matnr, "Material Number
+           menge, "Quantity
+           meins  "Base Unit of Measure
+
      FROM eban INTO TABLE @gt_eban WHERE banfn IN @s_banfn AND bnfpo IN @s_bnfpo.
 
   ELSEIF r_rad2 EQ abap_true.
 
-    SELECT ebeln,
-           ebelp,
-           matkl,
-           matnr,
-           menge,
-           meins
+*EKPO icin:
+
+    SELECT ebeln, "Purchasing Document Number
+           ebelp, "Item Number of Purchasing Document
+           matkl, "Material Group
+           matnr, "Material Number
+           menge, "Quantity
+           meins  "Base Unit of Measure
     FROM ekpo INTO TABLE @gt_ekpo WHERE ebeln IN @s_ebeln AND matkl IN @s_matkl.
 
   ENDIF.
