@@ -1,4 +1,4 @@
-![MasterHead]([https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjdkb3Z5bHRlb3JtZWp1bDd6ZXZscW42bmY3N20xamRrNnF2YjRidCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8vXkjPKhbA1JDffr91/giphy.gif](https://1.bp.blogspot.com/-7A4WynwLsMw/XbBpCXG8fHI/AAAAAAAAMt4/uOa1bpLskYgrwGbllhSu2SDj_Mig8SXJQCLcBGAsYHQ/s1600/2000_600px.gif))
+![MasterHead](https://1.bp.blogspot.com/-7A4WynwLsMw/XbBpCXG8fHI/AAAAAAAAMt4/uOa1bpLskYgrwGbllhSu2SDj_Mig8SXJQCLcBGAsYHQ/s1600/2000_600px.gif)
 <h1 align="center">Hi 👋, I'm Atahan Cesur</h1>
 <h3 align="center">A passionate frontend and backend developer from Turkey</h3>
 <img align="right" alt="Coding" width= "400" src="https://gifdb.com/images/high/animated-programmer-guy-coding-790a0bs8e8thpisg.gif">
