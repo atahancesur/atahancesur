@@ -32,15 +32,11 @@ SELECTION-SCREEN END OF BLOCK c1.
 
 DATA: go_custom TYPE REF TO cl_gui_custom_container,
       go_grid   TYPE REF TO cl_gui_alv_grid,
-      gt_vbak   TYPE TABLE OF zot_03_s_vbak,
-      gs_vbak   TYPE zot_03_s_vbak,
-      gt_vbap   TYPE TABLE OF zot_03_s_vbap,
-      gs_vbap   TYPE zot_03_s_vbap,
+      gt_vbak   TYPE TABLE OF zot_03_s_siparis,
+      gt_vbap   TYPE TABLE OF zot_03_s_siparis,
       gt_fcat   TYPE lvc_t_fcat,
       gs_fcat   TYPE lvc_s_fcat,
       gs_layout TYPE lvc_s_layo,
       gv_title  TYPE char50.
-
-
 
 FIELD-SYMBOLS: <gfs_siparis> TYPE zot_03_s_siparis.

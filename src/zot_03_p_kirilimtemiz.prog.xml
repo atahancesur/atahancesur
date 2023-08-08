@@ -19,6 +19,90 @@
        <ENTRY>SIPARIS KIRILIM</ENTRY>
        <LENGTH>15</LENGTH>
       </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_MALGRB</KEY>
+       <ENTRY>Mal Grubu</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_MALZNO</KEY>
+       <ENTRY>Malzeme Numarası</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_PARTI</KEY>
+       <ENTRY>Parti</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_SIPTUR</KEY>
+       <ENTRY>Sipariş Türü</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_SIPVER</KEY>
+       <ENTRY>Siipariş Ver</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUART</KEY>
+       <ENTRY>Sipariş Türü :</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUDAT</KEY>
+       <ENTRY>Belge Tarihi :</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_CHARG</KEY>
+       <ENTRY>Parti :</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KUNNR</KEY>
+       <ENTRY>Siparişi Veren :</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATKL</KEY>
+       <ENTRY>Mal Grubu :</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNR</KEY>
+       <ENTRY>Malzeme :</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PSTYV</KEY>
+       <ENTRY>Kalem Tipi :</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_VBELN</KEY>
+       <ENTRY>Sipariş Numarası :</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_WERKS</KEY>
+       <ENTRY>Üretim Yeri :</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
      </TEXTPOOL>
     </item>
    </I18N_TPOOL>

@@ -1,4 +1,4 @@
-REPORT ZOT_03_DATA_OBJECTS.
+REPORT zot_03_data_objects.
 
 *DATA: GV_OGRENCI_ADI(6) TYPE C,         "predefined
 *      GV_OGRENCI_SOYADI TYPE CHAR12,    "data element
@@ -167,65 +167,36 @@ REPORT ZOT_03_DATA_OBJECTS.
 *CL_DEMO_OUTPUT=>DISPLAY(  ).
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE text-001.
-    PARAMETERS: p_val1 TYPE i,
-                p_val2 TYPE i.
-SELECTION-SCREEN END OF BLOCK b1.
-
-
-SELECTION-SCREEN BEGIN OF BLOCK b2 WITH FRAME TITLE text-002.
-
-
-PARAMETERS: p_topla RADIOBUTTON GROUP g1,
-            p_cikar RADIOBUTTON GROUP g1,
-            p_carp RADIOBUTTON GROUP g1,
-            p_bol RADIOBUTTON GROUP g1.
-
-SELECTION-SCREEN END OF BLOCK b2.
-
-DATA: p_sonuc TYPE c,
-      flag TYPE int1 VALUE 0.
-
-INITIALIZATION.
-    p_topla = 'Topla'.
-    p_cikar = 'Cikart'.
-    p_carp = 'Carp'.
-    p_bol = 'Bol'.
-
-
-AT SELECTION-SCREEN.
-    CASE sy-ucomm.
-        WHEN 'Topla'.
-            flag = 1.
-            p_sonuc = p_val1 + p_val2.
-        WHEN 'Cikart'.
-            flag = 1.
-            p_sonuc = p_val1 - p_val2.
-        WHEN 'Bol'.
-            IF ( p_val2 <> 0 ).
-            flag = 1.
-            p_sonuc = p_val1 / p_val2.
-        ELSE.
-            flag = 2.
-        ENDIF.
-        WHEN 'Carp'.
-            flag = 1.
-            p_sonuc = p_val1 * p_val2.
-     ENDCASE.
-
-START-OF-SELECTION.
-   IF p_val1 IS NOT INITIAL OR p_val2 IS NOT INITIAL.
-
-     IF flag = 1.
-       WRITE: p_sonuc.
-     ELSEIF flag = 2.
-       WRITE: 'Sayiyi sifir ile bolemezsin'.
-     ELSEIF flag = 0.
-       MESSAGE 'Istedginiz islem icin herhangi bir butona tiklayin!' TYPE 'I'.
-     ENDIF.
-   ELSE.
-     MESSAGE 'Hesaplamak icin iki adet girdi yazin!' TYPE 'I'.
-   ENDIF.
-END-OF-SELECTION.
+*SELECTION-SCREEN BEGIN OF BLOCK B1 WITH FRAME TITLE TEXT-001.
+*  PARAMETERS: P_VAL1 TYPE I,
+*              P_VAL2 TYPE I.
+*SELECTION-SCREEN END OF BLOCK B1.
+*
+*
+*SELECTION-SCREEN BEGIN OF BLOCK B2 WITH FRAME TITLE TEXT-002.
+*
+*
+*  PARAMETERS: P_TOPLA RADIOBUTTON GROUP G1,
+*              P_CIKAR RADIOBUTTON GROUP G1,
+*              P_CARP  RADIOBUTTON GROUP G1,
+*              P_BOL   RADIOBUTTON GROUP G1.
+*
+*SELECTION-SCREEN END OF BLOCK B2.
+*
+*DATA: P_SONUC TYPE P DECIMALS 3.
+*
+*START-OF-SELECTION.
+*  IF P_TOPLA = 'X'.
+*    P_SONUC = P_VAL1 + P_VAL2.
+*  ELSEIF P_CIKAR = 'X'.
+*    P_SONUC = P_VAL1 - P_VAL2.
+*  ELSEIF P_BOL = 'X'.
+*    TRY.
+*        P_SONUC = P_VAL1 / P_VAL2.
+*      CATCH CX_SY_ZERODIVIDE.
+*        MESSAGE 'Sifira bolemezsin' TYPE 'I'.
+*    ENDTRY.
+*  ELSE.
+*    P_SONUC = P_VAL1 * P_VAL2.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
