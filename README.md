@@ -13,7 +13,6 @@
 <p align="left">
 <a href="https://linkedin.com/in/atahan-cesur-5450201b6" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="atahan-cesur-5450201b6" height="30" width="40" /></a>
 <a href="https://instagram.com/nahatarusec" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="nahatarusec" height="30" width="40" /></a>
-<a href="https://discord.gg/atahancesur#7077" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="atahancesur#7077" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
