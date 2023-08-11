@@ -1,4 +1,4 @@
-[MasterHead](https://visme.co/blog/wp-content/uploads/2020/03/animation-software-header-wide.gif)
+<img align="middle" alt="Coding" width="400" src="https://visme.co/blog/wp-content/uploads/2020/03/animation-software-header-wide.gif">
 <h1 align="center">Hi 👋, I'm Atahan Cesur</h1>
 <h3 align="center">A passionate frontend and backend developer from Turkey</h3>
 <img align="right" alt="Coding" width= "400" src="https://gifdb.com/images/high/animated-programmer-guy-coding-790a0bs8e8thpisg.gif](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHUweDUycWNpNXBrcmFqOG5heTA0NGF3ZzRlZ2ZidHlmczZ1YXhpcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
