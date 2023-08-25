@@ -55,6 +55,18 @@ DATA:  BEGIN OF STATUS_ZOT_03_T_UNVAN                .   "state vector
 DATA:  END OF STATUS_ZOT_03_T_UNVAN                .
 CONTROLS: TCTRL_ZOT_03_T_UNVAN
             TYPE TABLEVIEW USING SCREEN '0009'.
+*...processing: ZOT_03_T_URUN...................................*
+DATA:  BEGIN OF STATUS_ZOT_03_T_URUN                 .   "state vector
+         INCLUDE STRUCTURE VIMSTATUS.
+DATA:  END OF STATUS_ZOT_03_T_URUN                 .
+CONTROLS: TCTRL_ZOT_03_T_URUN
+            TYPE TABLEVIEW USING SCREEN '0011'.
+*...processing: ZOT_03_T_URUNADI................................*
+DATA:  BEGIN OF STATUS_ZOT_03_T_URUNADI              .   "state vector
+         INCLUDE STRUCTURE VIMSTATUS.
+DATA:  END OF STATUS_ZOT_03_T_URUNADI              .
+CONTROLS: TCTRL_ZOT_03_T_URUNADI
+            TYPE TABLEVIEW USING SCREEN '0012'.
 *...processing: ZOT_03_T_ZMN....................................*
 DATA:  BEGIN OF STATUS_ZOT_03_T_ZMN                  .   "state vector
          INCLUDE STRUCTURE VIMSTATUS.
@@ -71,6 +83,8 @@ TABLES: *ZOT_03_T_P_ILTSM              .
 TABLES: *ZOT_03_T_P_ITUR               .
 TABLES: *ZOT_03_T_P_MAST               .
 TABLES: *ZOT_03_T_UNVAN                .
+TABLES: *ZOT_03_T_URUN                 .
+TABLES: *ZOT_03_T_URUNADI              .
 TABLES: *ZOT_03_T_ZMN                  .
 TABLES: ZOT_03_T_PERS                  .
 TABLES: ZOT_03_T_P_AILE                .
@@ -81,6 +95,8 @@ TABLES: ZOT_03_T_P_ILTSM               .
 TABLES: ZOT_03_T_P_ITUR                .
 TABLES: ZOT_03_T_P_MAST                .
 TABLES: ZOT_03_T_UNVAN                 .
+TABLES: ZOT_03_T_URUN                  .
+TABLES: ZOT_03_T_URUNADI               .
 TABLES: ZOT_03_T_ZMN                   .
 
 * general table data declarations..............
