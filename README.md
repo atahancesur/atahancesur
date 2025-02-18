@@ -5,7 +5,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=atahancesur&label=Profile%20views&color=0e75b6&style=flat" alt="atahancesur" /> </p>
 
-- 🌱 I’m currently learning **SAP ABAP, Financial Literacy**
+- 🌱 I’m currently learning **DevOps & Linux**
 
 - 📫 How to reach me **atahancesurr@gmail.com**
 
